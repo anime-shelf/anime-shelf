@@ -180,7 +180,7 @@ jobs:
               try { File f = finFile(id); return f.exists() ? f.length() : 0L; } catch (Throwable t) { return 0L; }
             }
 
-            @JavascriptInterface
+          @JavascriptInterface
             public String start(String id, String url, String referer, String ua, String fileName) {
               try {
                 cancelQuiet(id);
@@ -415,7 +415,7 @@ jobs:
                   try { raf.close(); } catch (Throwable ignored) { }
                 }
               }
-            }
+            
                         /* ================= local file server (Range aware) ================= */
             private static synchronized void startServer(final Context c) {
               if (srv != null) return;
